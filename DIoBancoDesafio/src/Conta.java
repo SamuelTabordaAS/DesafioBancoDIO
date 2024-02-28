@@ -21,9 +21,11 @@ public class Conta {
 
     public void sacar(double valor){ 
         saldo -= valor ; 
+        comprovanteSaque(valor);
     }
     public void depositar(double valor){ 
         saldo+= valor ; 
+        comprovanteDeposito(valor);
     }
     public void transferir(double valor, Conta contaDestino){ 
         this.sacar(valor); 
@@ -36,8 +38,15 @@ public class Conta {
         contaDestino.depositar(valor);
         System.out.println("PIX feito com SUCESSO (SEM TAXA)");
     }
-    public void comprovanteSaque(){ 
+    public void comprovanteSaque(double valor){ 
         System.out.println("== COMPROVANTE DE SAQUE ==");
+        System.out.println("Foi sacado : "+ valor );
+        System.out.println("==========================");
+    }
+    public void comprovanteDeposito(double valor){ 
+        System.out.println("== COMPROVANTE DE DEPOSITO ==");
+        System.out.println("Foi depositado : "+ valor );
+        System.out.println("=============================");
     }
 
     public int getAgencia(){ 
