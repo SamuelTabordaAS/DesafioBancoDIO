@@ -1,0 +1,20 @@
+devemos criar um BANCO com algumas funcionalidades basicas como: 
+SACAR; DEPOSITAR; TRANSFERIR; EXIBIR EXTRATO . 
+lembrando de criar um codigo mais limpo que poder ! 
+
+o BANCO deve conter : 
+NOME : 
+CONTAS : 
+CLIENTE: 
+
+CONTAS deve conter : 
+TIPO DE CONTA (CONTA CORRENTE E POUPANCA)
+AGENCIA : 
+NUMERO: 
+SALDO: 
+CLIENTE: 
+
+Funcionalides EXTRAS: (nao sao obrigatorias e ao decorrer do codigo pode ir aparecendo novas ideias)
+seria legal adicionar algumas novas funcionalidade COMO: 
+PIX : 
+INVESTIMENTO: 
